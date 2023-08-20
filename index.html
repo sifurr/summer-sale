@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Summer Sale</title>
+    <!-- CDN links of DaisyUI and Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .font-work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .primary-color {
+            color: #111;
+        }
+
+        .secondary-color {
+            color: rgba(17, 17, 17, 0.50);
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-work-sans">
+    <!-- header start  -->
+    <header class="bg-[#F9F6E2]">
+        <!-- hero container start  -->
+        <div class="flex flex-col md:flex-col lg:flex-row justify-center items-center gap-5 py-20">
+            <!-- hero left content start -->
+            <div class="lg:w-1/2 lg:ml-60 text-center">
+                <p class="text-lg md:text-2xl lg:text-3xl font-medium primary-color mb-6 md:mb-8 lg:mb-11">---SALE
+                    FEVER---</p>
+                <h3 class="text-2xl md:text-3xl lg:text-6xl font-bold primary-color mb-4 md:mb-10 lg:mb-16">Purchase TK
+                    200 or
+                    <br>
+                    above & get <span class="text-[#E527B2]">20% off</span>
+                </h3>
+                <p class="text-2xl font-medium primary-color">Use Promo Code <span
+                        class="text-white text-2xl font-semibold bg-[#E527B2] inline-block mt-3 rounded-lg px-6 py-4">SELL200</span>
+                </p>
+
+            </div>
+            <!-- hero left content end -->
+            <!-- hero right content start -->
+            <div class="lg:w-1/2 lg:mr-60">
+                <img src="images/summer-1.png" alt="">
+            </div>
+            <!-- hero left content end -->
+        </div>
+        <!-- hero container end  -->
+    </header>
+    <!-- header end -->
+
+    <!-- main start  -->
+    <main class="bg-[#F8F8F8]">
+        <section class="lg:mr-60 lg:ml-60">
+            <div class="flex flex-col md:flex-col lg:flex-row gap-6">
+                <div class="w-1/2 lg:w-3/4">
+                    <!-- card container start -->
+                    <div class="mb-14">
+                        <h2 class="text-4xl primary-color font-semibold pt-32 pb-8">Kitchenware</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-3 md:gap-3 lg:gap-3">
+                            <!-- first card start -->
+                            <div
+                                class="card bg-base-100 shadow-xl border-solid border-8 rounded-lg bg-[#1111110d] border-white">
+                                <figure class="py-9 px-16 h-48">
+                                    <img src="images/prod1.png" alt="kitchenware" />
+                                </figure>
+                                <div class="card-body items-center text-center bg-white">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    </div>
+                                    <h2 class="card-title pt-2 pb-2 primary-color text-xl font-semibold">K. Accessories
+                                    </h2>
+                                    <p class="secondary-color text-xl"><span id="price">39.00</span> TK</p>
+                                </div>
+                            </div>
+                            <!-- first card end -->
+                            <!-- second card start -->
+                            <div
+                                class="card bg-base-100 shadow-xl border-solid border-8 rounded-lg bg-[#1111110d] border-white">
+                                <figure class="py-9 px-16 h-48">
+                                    <img src="images/prod2.png" alt="kitchenware" />
+                                </figure>
+                                <div class="card-body items-center text-center bg-white">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    </div>
+                                    <h2 class="card-title pt-2 pb-2 primary-color text-xl font-semibold">L. Accessories
+                                    </h2>
+                                    <p class="secondary-color text-xl"><span id="price">25.00</span> TK</p>
+                                </div>
+                            </div>
+                            <!-- second card end -->
+                            <!-- third card start -->
+                            <div
+                                class="card bg-base-100 shadow-xl border-solid border-8 rounded-lg bg-[#1111110d] border-white">
+                                <figure class="py-9 px-16 h-48">
+                                    <img src="images/prod3.png" alt="kitchenware" />
+                                </figure>
+                                <div class="card-body items-center text-center bg-white">
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    </div>
+                                    <h2 class="card-title pt-2 pb-2 primary-color text-xl font-semibold">Home Cooker
+                                    </h2>
+                                    <p class="secondary-color text-xl"><span id="price">49.00</span> TK</p>
+                                </div>
+                            </div>
+                            <!-- third card end -->
+                        </div>
+                    </div>
+                    <!-- card container end -->
+
+                </div>
+
+                <!-- cart start -->
+                <div class="w-1/2 md:w-1/2 lg:w-1/4 pt-32">
+                    <div class="bg-white lg:w-[342px] rounded-lg">
+                        <h1 class="primary-color text-2xl font-medium py-6 pl-6">Have coupon?</h1>
+                        <div class="form-control border-none p-6">
+                            <div class="input-group ">
+                                <input type="text" placeholder="Coupon code" class="bg-white input input-bordered" />
+                                <button disabled
+                                    class="btn btn-square text-white bg-[#E527B2] py-4 px-10">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white lg:w-[342px] rounded-lg mt-6">
+                        <div class="p-6">
+                            <div>
+
+                            </div>
+                            <div class="py-6">
+                                <hr>
+                            </div>
+                            <div>
+                                <h3 class="primary-color text-2xl font-medium">Total Price: <span id="total-price" class="secondary-color">0.00</span><span class="secondary-color">TK</span></h3>
+                                <h3  class="primary-color text-2xl font-medium">Discount: <span id="discount" class="secondary-color">0.00</span><span class="secondary-color">TK</span></h3>
+                                <h3  class="primary-color text-2xl font-medium">Total: <span id="grand-total" class="secondary-color">0.00</span><span class="secondary-color">TK</span></h3>
+                            </div>
+                            <div class="pt-6">
+                                <hr>
+                            </div>
+                            <button disabled class="bg-[#E527B2] text-white px-16 py-4 rounded-lg relative top-12">Make Purchase</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- cart start -->
+            </div>
+        </section>
+    </main>
+    <!-- main end  -->
+
+
+    <!-- Scripts -->
+    <script src="scripts/shopping-cart.js"></script>
 </body>
+
 </html>
