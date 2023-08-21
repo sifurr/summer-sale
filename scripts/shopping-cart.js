@@ -24,12 +24,6 @@ document.getElementById('kid-one').addEventListener('click', function () {
     setGrandTotal('total-price', 'discount', 'grand-total');
 })
 
-// document.getElementById('btn-apply-coupon').addEventListener('click', function (){
-//     let totalDiscount = calculateDiscount('k-price-one', 'total-price', 'coupon-code', 'SELL200');
-//     setDiscount('discount', totalDiscount);
-//     setGrandTotal('total-price', 'discount', 'grand-total');
-// })
-
 // kitchenware two
 document.getElementById('kid-two').addEventListener('click', function () {
     const productTitle = document.getElementById('k-title-two').innerText;
@@ -159,6 +153,10 @@ document.getElementById('btn-apply-coupon').addEventListener('click', function (
 
 document.getElementById('congratulate').addEventListener('click', function () {
     window.location.href = "http://127.0.0.1:5500/index.html";
+})
+
+document.getElementById('use-promo').addEventListener('click', function(){
+    document.getElementById('coupon-code').value = 'SELL200';
 })
 
 
